@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia&effect=fire');
+
+.font-effect-fire {
+  text-shadow: 10 0 5px rgba(255, 0, 0, 0.9), 0 0 50px rgba(255, 0, 0, 0.9), 0 0 50px rgba(255, 0, 0, 0.9);
+  color: #fcfcfc; 
+}
+
+body {
+  align-items: center;
+  background-image: url('image.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  font-family: "Sofia", sans-serif;
+    /* font-size: 30px; */
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  width: 95%;
+  justify-content: center;
+}
+
+/* Gaya Pomodoro Timer */
+.pomodoro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.pomodoro h2 {
+    color: #6d6875;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.pomodoro input {
+    width: 30%;
+    padding: 12px;
+    margin-bottom: 1px;
+    border: 1px solid #eacdc2;
+    border-radius: 5px;
+    background-color: #fdf3f0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.pomodoro button {
+    background-color: #6cd4d1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 33px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 0px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.0rem;
+    max-width: 100%;
+}
+
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+.button-container button {
+  padding: 10px 15px; /* Add padding for better appearance */
+  font-size: 1rem; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* Remove default border */
+  background-color: rgb(176, 192, 225); /* Button background color */
+  color: white; /* Button text color */
+}
+
+.button-container button:hover {
+  background-color: #9aa5a9; /* Change background color on hover */
+}
+
+.time-inputs {
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Space between inputs */
+}
+
+.time-inputs input {
+  width: 80px; /* Set a fixed width for inputs */
+  padding: 8px; /* Add some padding for better appearance */
+  border: 1px solid #eacdc2; /* Match existing styles */
+  border-radius: 5px; /* Match existing styles */
+  background-color: #fdf3f0; /* Match existing styles */
+  font-size: 1rem; /* Match existing styles */
+}
+
+#timer-display {
+    font-size: 5rem;
+    font-family: 'Patrick Hand', cursive;
+    color: #5c5b5e;
+    margin-top: 10px ;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #eacdc2;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#timer-label {
+    color: #5f5a66;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsif untuk Pomodoro */
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    }
+
+    .pomodoro {
+        padding: 15px;
+    }
+
+    .pomodoro h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    .pomodoro, .todo, .spotify-player {
+      width: 90%; /* Set a width for mobile */
+      margin: 10px 0; /* Add margin for spacing */
+    }
+
+    #timer-display {
+        font-size: 3rem;
+    }
+
+    .pomodoro button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .todo button {
+      max-width: 100%; /* Ensure button takes full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .pomodoro {
+        padding: 10px;
+    }
+
+    .pomodoro h2 {
+        font-size: 1.5rem;
+    }
+
+    .pomodoro input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #timer-display {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Gaya To-Do List */
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .todo h2 {
+    color: #6d6875;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .todo input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #eacdc2;
+    border-radius: 5px;
+    background-color: #fdf3f0;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .todo button {
+    background-color: rgb(176, 192, 225);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.1rem;
+    max-width: 30%;
+  }
+  
+  .todo button:hover {
+    background-color: #9aa5a9;
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #eacdc2;
+    margin-bottom: 10px;
+    max-height: 40px; 
+  }
+
+  #task-list li .task-content {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+  }
+
+  #task-list li input[type="checkbox"] {
+    margin-right: 10px; 
+    width: 18px; 
+    height: 18px;
+  }
+  
+  #task-list li span {
+    text-align: left;
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #5c5b5e;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 70%;
+  }
+  
+  #task-list li button {
+    background-color: #f77589;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    margin-left: 10px;
+    flex-shrink: 0;
+    width: auto;
+    max-width: 90px;
+  }
+  
+  #task-list li button:hover {
+    background-color: #e5989b;
+  }
+  
+  #empty-message {
+    color: #9d8189;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 20px;
+  }
+
+  .spotify-player {
+    width: 100%; /* Ensures full width */
+    margin-top: 20px; /* Adds space above the player */
+    background-color: white; opacity: 0.9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* Additional styles can be added here */
+}
